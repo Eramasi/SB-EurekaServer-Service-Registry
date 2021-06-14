@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: swimming-pool-discovery-client
+server:
+  port:  8761
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    defaultZone: http://localhost:8761/eureka/
+    
+    spring:
+    freemarker:
+    prefer-file-system-access: false
